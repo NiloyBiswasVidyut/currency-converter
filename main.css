@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+    font-family: sans-serif;
+}
+.flag-icon{
+    max-width: 25px;
+}
+.container{
+    width: 370px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 7px;
+}
+.container header{
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+.container form :where(input, select, button){
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.container p{
+    font-size: 18px;
+    padding: 5px 0;
+}
+.container form input{
+    height: 50px;
+    border: 1px solid #dfdfdf;
+    font-size: 17px;
+    padding: 0 15px;
+}
+.container form input:focus{
+    border: 2px solid rgb(94, 94, 94);
+}
+.container form .drop-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container form .drop-list .select-box{
+    cursor: pointer;
+    display: flex;
+    width: 115px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+}
+.container form .drop-list .select-box select{
+    width: auto;
+    font-size: 15px;
+}
+.container form .drop-list .icon{
+    cursor: pointer;
+    font-size: 22px;
+    padding-top: 20px;
+}
+.container form .exchange-rate{
+    font-size: 17px;
+    padding: 20px 0;
+}
+.container form button{
+    height: 52px;
+    color: #ffffff;
+    background: #000000;
+    font-size: 17px;
+    cursor: pointer;
+}
+.container form button:hover{
+    color: #000000;
+    background: #ffffff;
+    transition: 300ms;
+    border: 1px solid black;
+}
