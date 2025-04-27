@@ -25,7 +25,14 @@ function loadFlag(element){
     for(code in country_code){
         if(code == element.value){
             let imgTag = element.parentElement.querySelector("img");
-            imgTag.src = `https://flagsapi.com/${country_code[code]}/flat/64.png`;
+            console.log(code,element.value);
+            if(code == "EUR")
+            {
+                imgTag.src = `https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/1280px-Flag_of_Europe.svg.png`; 
+            }
+            else{
+                imgTag.src = `https://flagsapi.com/${country_code[code]}/flat/64.png`;
+            }
         }
     }
 }
